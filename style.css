@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,12 +9,10 @@
 }
 
 html {
-
   font-size: 62.5%;
 }
 
 header {
-
   width: 375px;
   height: 92px;
   left: 0px;
@@ -22,18 +21,19 @@ header {
 }
 
 .status_bar {
-display: flex;
-justify-content: space-between;
-align-items: center;
-width: 375px;
-height: 44px;
-padding: 0px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 375px;
+  height: 44px;
+  padding: 0px 24px;
 }
+
 .status_bar p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: #ffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #ffff;
 }
 
 .tool_bar {
@@ -44,27 +44,33 @@ padding: 0px 24px;
     height: 44px;
     padding: 0px 24px;
 }
+
 .tool_bar h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: #ffff;
     cursor: pointer;
 }
+
 .tool_bar h1:hover {
     color: rgba(255, 255, 255, 0.582);
 }
+
 .tool_bar img {
     margin-right: 24px;
     cursor: pointer;
 }
+
 .headline img {
     margin-top: 12px;
     width: 200px;
     height: 40px;
 }
+
 .tool_bar img:hover {
     background-color: rgba(255, 255, 255, 0.582);
 }
+
 .headline {
     display: flex;
     flex-direction: column;
@@ -77,10 +83,11 @@ padding: 0px 24px;
     top: 92px;
     background: #1C1A19;
 }
+
 .headline h2 {
     width: 327px;
     height: 124px;
-    font-family: 'Crete Round';
+    font-family: 'Crete Round', serif;
     font-weight: 400;
     font-style: normal;
     font-size: 56px;
