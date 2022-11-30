@@ -15,9 +15,7 @@ html {
 header {
   width: 375px;
   height: 92px;
-  left: 0px;
-  top: 0px;
-  background: #3C3A39;
+  background: #3c3a39;
 }
 
 .status_bar {
@@ -26,7 +24,7 @@ header {
   align-items: center;
   width: 375px;
   height: 44px;
-  padding: 0px 24px;
+  padding: 1px 24px;
 }
 
 .status_bar p {
@@ -42,7 +40,7 @@ header {
   align-items: center;
   width: 375px;
   height: 44px;
-  padding: 0px 24px;
+  padding: 1px 24px;
 }
 
 .tool_bar h1 {
@@ -79,7 +77,6 @@ header {
   position: absolute;
   width: 375px;
   height: 590px;
-  left: 0px;
   top: 92px;
   background: #1C1A19;
 }
