@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 html {
     font-size: 62.5%;
-    /* font-family: 'Roboto', sans-serif; */
-    /* font-family: 'Poppins', sans-serif; */
-    /* font-family: 'Crete Round', serif; */
-  }
+}
 header {
     width: 375px;
     height: 92px;
@@ -55,9 +54,6 @@ header {
     cursor: pointer;
 }
 .tool_bar img:hover {
-    /* width: 20px;
-    height: 20px;
-    border-radius: 10px; */
     background-color: rgba(255, 255, 255, 0.582);
 }
 .headline {
@@ -122,4 +118,5 @@ header {
     right: -90px;
     bottom: -30px;
 }
+
 
