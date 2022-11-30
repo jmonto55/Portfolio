@@ -37,7 +37,7 @@
 
 # 📖 Portfolio <a name="about-project"></a>
 
-This project is a portfolio website containing allmy personal and profesionla information.
+This project is a portfolio website containing all my professional information and projects.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -127,7 +127,7 @@ N/A
 
 👤 **Jose**
 
-- GitHub: [@githubhandle](https://github.com/jmonto55)
+- GitHub: [@jmonto55](https://github.com/jmonto55)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
