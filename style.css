@@ -78,7 +78,7 @@ header {
   width: 375px;
   height: 590px;
   top: 92px;
-  background: #1C1A19;
+  background: #1c1a19;
 }
 
 .headline h2 {
@@ -90,7 +90,7 @@ header {
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.37px;
-  color: #ff6B00;
+  color: #ff6b00;
 }
 
 .headline h3 {
@@ -102,7 +102,7 @@ header {
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 32px;
-  color: #fff5E1;
+  color: #fff5e1;
 }
 
 .headline p {
@@ -114,7 +114,7 @@ header {
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 24px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .headline .social_media:hover {
@@ -130,5 +130,3 @@ header {
   right: -90px;
   bottom: -30px;
 }
-
-
