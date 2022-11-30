@@ -45,9 +45,20 @@ header {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: #ffff;
+    cursor: pointer;
+}
+.tool_bar h1:hover {
+    color: rgba(255, 255, 255, 0.582);
 }
 .tool_bar img {
     margin-right: 24px;
+    cursor: pointer;
+}
+.tool_bar img:hover {
+    /* width: 20px;
+    height: 20px;
+    border-radius: 10px; */
+    background-color: rgba(255, 255, 255, 0.582);
 }
 .headline {
     display: flex;
@@ -99,6 +110,11 @@ header {
     width: 200px;
     height: 40px;
 }
+.headline .social_media:hover {
+    background-color: rgba(255, 255, 255, 0.089);
+    border-radius: 20px;
+    cursor: pointer;
+}
 .headline .background_image {
     position: absolute;
     height: 300px;
@@ -106,3 +122,4 @@ header {
     right: -90px;
     bottom: -30px;
 }
+
