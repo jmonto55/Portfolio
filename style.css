@@ -1,5 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+html {
+    font-size: 62.5%;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Crete Round', serif; */
+  }
+header {
+    width: 375px;
+    height: 92px;
+    left: 0px;
+    top: 0px;
+    background: #3C3A39;
+}
+.status_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 375px;
+    height: 44px;
+    padding: 0px 24px;
+}
+.status_bar p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #ffff;
+}
+.tool_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 375px;
+    height: 44px;
+    padding: 0px 24px;
+}
+.tool_bar h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #ffff;
+}
+.tool_bar img {
+    margin-right: 24px;
+}
+.headline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 120px 24px;
+    position: absolute;
+    width: 375px;
+    height: 590px;
+    left: 0px;
+    top: 92px;
+    background: #1C1A19;
+}
+.headline h2 {
+    width: 327px;
+    height: 124px;
+    font-family: 'Crete Round';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 0.37px;
+    color: #FF6B00;
+}
+.headline h3 {
+    margin-top: 12px;
+    width: 327px;
+    height: 27px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 32px;
+    color: #FFF5E1;
+}
+.headline p {
+    margin-top: 12px;
+    width: 327px;
+    height: 123px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 24px;
+    color: #FFFFFF;
 }
