@@ -5,28 +5,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
 }  
 
 html {
-  font-size: 62.5%;
+font-size: 62.5%;
 }  
 header {
-  width: 375px;
-  height: 92px;
-  left: 0px;
-  top: 0px;
-  background: #3C3A39;
+width: 375px;
+height: 92px;
+left: 0px;
+top: 0px;
+background: #3C3A39;
 }  
 .status_bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 375px;
-    height: 44px;
-    padding: 0px 24px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 375px;
+height: 44px;
+padding: 0px 24px;
 }
 .status_bar p {
     font-family: 'Roboto', sans-serif;
