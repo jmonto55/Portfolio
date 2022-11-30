@@ -35,9 +35,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Hello Microverse <a name="about-project"></a>
+# 📖 Portfolio <a name="about-project"></a>
 
-Hello Microverse is a test project built to understand the basics of professional git workflows.
+This project is a portfolio website containing allmy personal and profesionla information.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -71,9 +71,9 @@ Hello Microverse is a test project built to understand the basics of professiona
 
 ### Key Features <a name="key-features"></a>
 
-- This is a stable version
-- Running the code will print 'Hello Microverse'.
-- the title's color is red
+- This is the first itertation of my portfolio.
+- It contains my professional information.
+- All my porjects will be displayed in this werbsite.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -98,7 +98,7 @@ In order to run this project you need: any functional browser.
 ### Setup
 
 Clone this repository to your desired folder:
-cd my-folder git clone git@github.com:myaccount/my-project.git
+cd my-folder git clone [@jmonto55](https://github.com/jmonto55/Portfolio)
 
 ### Install
 
@@ -125,11 +125,6 @@ N/A
 
 ## 👥 Authors <a name="authors"></a>
 
-
-👤 **Khaled**
-
-- GitHub: [@githubhandle](https://github.com/glitcher255)
-
 👤 **Jose**
 
 - GitHub: [@githubhandle](https://github.com/jmonto55)
@@ -140,8 +135,8 @@ N/A
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Next version will have an option to display 'Hello Universe'**
-- [ ] **Hopefully the next version will pass the code review**
+- [ ] **Next version will have the projects section**
+- [ ] **Next version will have a live demo to my most complex project**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
