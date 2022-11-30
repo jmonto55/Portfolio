@@ -94,3 +94,15 @@ header {
     line-height: 24px;
     color: #FFFFFF;
 }
+.headline img {
+    margin-top: 12px;
+    width: 200px;
+    height: 40px;
+}
+.headline .background_image {
+    position: absolute;
+    height: 300px;
+    width: 305px;
+    right: -90px;
+    bottom: -30px;
+}
