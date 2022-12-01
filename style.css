@@ -29,9 +29,11 @@ header {
   padding: 1px 24px;
 }
 
-.tool_bar h1 {
+.tool_bar a {
+  text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
+  font-size: 2rem;
   color: #ffff;
   cursor: pointer;
 }
@@ -66,7 +68,7 @@ header {
   background: #1c1a19;
 }
 
-.headline h2 {
+.headline h1 {
   width: 327px;
   height: 124px;
   font-family: 'Crete Round', serif;
