@@ -38,10 +38,6 @@ header {
   cursor: pointer;
 }
 
-.tool_bar h1:hover {
-  color: rgba(255, 255, 255, 0.582);
-}
-
 .tool_bar img {
   margin-right: 24px;
   cursor: pointer;
@@ -75,6 +71,10 @@ header {
   line-height: 64px;
   letter-spacing: 0.37px;
   color: #ff6b00;
+}
+
+.tool_bar h1:hover {
+  color: rgba(255, 255, 255, 0.582);
 }
 
 .headline h2 {
