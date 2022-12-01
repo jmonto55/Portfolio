@@ -47,14 +47,8 @@ header {
   cursor: pointer;
 }
 
-.headline img {
-  margin-top: 12px;
-  width: 200px;
-  height: 40px;
-}
-
 .tool_bar img:hover {
-  background-color: rgba(255, 255, 255, 0.582);
+  color: rgba(255, 255, 255, 0.582);
 }
 
 .headline {
@@ -66,6 +60,9 @@ header {
   width: 375px;
   height: 590px;
   background: #1c1a19;
+  background-image: url(./assets/background_image.svg);
+  background-repeat: no-repeat;
+  background-position: right 115%;
 }
 
 .headline h1 {
@@ -80,7 +77,7 @@ header {
   color: #ff6b00;
 }
 
-.headline h3 {
+.headline h2 {
   margin-top: 12px;
   width: 327px;
   height: 27px;
@@ -114,9 +111,16 @@ header {
 
 .fa {
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
   cursor: pointer;
+}
+
+.fa:hover {
+  background-color: rgba(255, 255, 255, 0.329);
 }
 
 .fa-github {
