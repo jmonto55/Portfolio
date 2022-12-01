@@ -174,6 +174,12 @@ header {
   margin-top: 40px;
 }
 
+.main_articles_container {
+  display: grid;
+  gap: 24px;
+  place-content: center;
+}
+
 .multi_post_card {
   display: flex;
   flex-direction: column;
@@ -232,6 +238,70 @@ header {
 }
 
 .multi_post_card button:hover {
+  background: #b14a00d0;
+  border: solid #ff6b00;
+  border-width: 2px;
+}
+
+.project_card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 386px;
+  width: 327px;
+  background-image: url(./assets/project_image.svg);
+  padding-top: 80px;
+}
+
+.project_card h4 {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  margin-left: 24px;
+}
+
+.project_card p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin-left: 24px;
+}
+
+.techs_used_project {
+  display: flex;
+}
+
+.techs_used_project p {
+  margin-top: 4px;
+  margin-left: 24px;
+  padding: 10px 12px;
+  background-color: rgba(255, 255, 255, 0.24);
+  font-weight: 500;
+}
+
+.project_card button {
+  padding: 12px;
+  width: 327px;
+  height: 48px;
+  background: #ff6b00;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.7rem;
+  border: none;
+  margin-top: 26px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.project_card button:hover {
   background: #ff6a00bd;
   border: solid #ff6b00;
   border-width: 2px;
