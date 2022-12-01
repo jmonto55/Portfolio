@@ -13,6 +13,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  max-width: 375px;
+}
+
 header {
   width: 375px;
   height: 68px;
@@ -107,16 +111,18 @@ header {
   justify-content: space-between;
   width: 200px;
   height: 40px;
+  list-style: none;
 }
 
 .fa {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 50%;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .fa:hover {
@@ -154,7 +160,7 @@ header {
 
 .main_middle_section h3 {
   margin-top: 100px;
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -171,7 +177,7 @@ header {
 .multi_post_card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   color: #091e42;
 }
 
@@ -180,7 +186,7 @@ header {
 }
 
 .multi_post_card h4 {
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -221,4 +227,12 @@ header {
   font-size: 1.7rem;
   border: none;
   margin-top: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.multi_post_card button:hover {
+  background: #ff6a00bd;
+  border: solid #ff6b00;
+  border-width: 2px;
 }
