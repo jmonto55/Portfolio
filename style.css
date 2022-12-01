@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  width: 375px;
+  height: 68px;
+  background: #3c3a39;
+  display: flex;
+  align-items: center;
+}
+
+.tool_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 375px;
+  height: 44px;
+  padding: 1px 24px;
+}
+
+.tool_bar a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #ffff;
+  cursor: pointer;
+}
+
+.tool_bar img {
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.tool_bar img:hover {
+  color: rgba(255, 255, 255, 0.582);
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 120px 24px;
+  position: absolute;
+  width: 375px;
+  height: 590px;
+  background: #1c1a19;
+  background-image: url(./assets/background_image.svg);
+  background-repeat: no-repeat;
+  background-position: right 115%;
+}
+
+.headline h1 {
+  width: 327px;
+  height: 124px;
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+.tool_bar h1:hover {
+  color: rgba(255, 255, 255, 0.582);
+}
+
+.headline h2 {
+  margin-top: 12px;
+  width: 327px;
+  height: 27px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 32px;
+  color: #fff5e1;
+}
+
+.headline p {
+  margin-top: 12px;
+  width: 327px;
+  height: 123px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 24px;
+  color: #fff;
+}
+
+.social_media {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  height: 40px;
+}
+
+.fa {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.fa:hover {
+  background-color: rgba(255, 255, 255, 0.329);
+}
+
+.fa-github {
+  background-image: url("./assets/github_icon.svg");
+}
+
+.fa-linkedin {
+  background-image: url("./assets/linkedin_icon.svg");
+}
+
+.fa-angelist {
+  background-image: url("./assets/angelist_icon.svg");
+}
+
+.fa-twitter {
+  background-image: url("./assets/twitter_icon.svg");
+}
+
+.fa-medium {
+  background-image: url("./assets/medium_icon.svg");
+}
+
+.headline .background_image {
+  position: absolute;
+  height: 300px;
+  width: 305px;
+  right: -90px;
+  bottom: -30px;
+}
