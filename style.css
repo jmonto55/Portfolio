@@ -309,6 +309,7 @@ header {
 }
 
 .about_me_section {
+  width: 375px;
   display: flex;
   flex-direction: column;
   background-color: #1c1a19;
@@ -361,4 +362,73 @@ header {
   margin-top: 24px;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+.about_me_section button:hover {
+  background: #b14a00d0;
+  border: solid #ff6b00;
+  border-width: 2px;
+}
+
+.skills_section {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1c1a19;
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.skills_section ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  font-size: 3.2rem;
+  font-family: 'Inter', sans-serif;
+  margin-top: 44px;
+  font-weight: 700;
+  position: relative;
+}
+
+.skills_section li {
+  font-size: 2.2rem;
+  font-family: 'Inter', sans-serif;
+  margin-top: 32px;
+  font-weight: 300;
+}
+
+.diamond_icon {
+  position: absolute;
+  left: -40px;
+  top: 5px;
+  width: 28px;
+  height: 28px;
+  background-image: url(./assets/diamond_icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.square_icon {
+  position: absolute;
+  left: -40px;
+  top: 5px;
+  width: 28px;
+  height: 28px;
+  background-image: url(./assets/square_icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.circle_icon {
+  position: absolute;
+  left: -40px;
+  top: 5px;
+  width: 28px;
+  height: 28px;
+  background-image: url(./assets/circle_icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
