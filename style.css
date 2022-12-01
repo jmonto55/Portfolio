@@ -178,6 +178,7 @@ header {
   display: grid;
   gap: 24px;
   place-content: center;
+  padding-bottom: 120px;
 }
 
 .multi_post_card {
@@ -305,4 +306,59 @@ header {
   background: #ff6a00bd;
   border: solid #ff6b00;
   border-width: 2px;
+}
+
+.about_me_section {
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1a19;
+  padding: 24px;
+  align-items: flex-start;
+  background-image: url(./assets/background_img_about_me.svg);
+  background-repeat: no-repeat;
+  background-position: right 92%;
+}
+
+.title_line_two {
+  width: 327px;
+  height: 1px;
+  background-color: #fff;
+  margin-top: 200px;
+}
+
+.about_me_section h4 {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  color: #ff6b00;
+  margin-top: 100px;
+}
+
+.about_me_section p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F4F5F7;
+  margin-top: 12px;
+}
+
+.about_me_section button {
+  align-self: flex-start;
+  padding: 12px;
+  width: 161px;
+  height: 48px;
+  background: #ff6b00;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.7rem;
+  border: none;
+  margin-top: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
