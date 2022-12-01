@@ -104,10 +104,39 @@ header {
   color: #fff;
 }
 
-.headline .social_media:hover {
-  background-color: rgba(255, 255, 255, 0.089);
-  border-radius: 20px;
+.social_media {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  height: 40px;
+}
+
+.fa {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
   cursor: pointer;
+}
+
+.fa-github {
+  background-image: url("./assets/github_icon.svg");
+}
+
+.fa-linkedin {
+  background-image: url("./assets/linkedin_icon.svg");
+}
+
+.fa-angelist {
+  background-image: url("./assets/angelist_icon.svg");
+}
+
+.fa-twitter {
+  background-image: url("./assets/twitter_icon.svg");
+}
+
+.fa-medium {
+  background-image: url("./assets/medium_icon.svg");
 }
 
 .headline .background_image {
