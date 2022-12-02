@@ -25,6 +25,10 @@ header {
   align-items: center;
 }
 
+main {
+  background-color: #1c1a19;
+}
+
 .tool_bar {
   display: flex;
   justify-content: space-between;
