@@ -213,11 +213,14 @@ header {
   display: flex;
 }
 
-.techs_used p {
+.techs_used li {
+  list-style: none;
   padding: 10px 12px;
   border: 1px solid #8993a4;
   margin-right: 15px;
   font-weight: 500;
+  font-size: 1.5rem;
+  font-family: 'Inter', sans-serif;
 }
 
 .multi_post_card button {
@@ -271,12 +274,16 @@ header {
   display: flex;
 }
 
-.techs_used_project p {
+.techs_used_project li {
+  list-style: none;
   margin-top: 4px;
   margin-left: 24px;
   padding: 10px 12px;
   background-color: rgba(255, 255, 255, 0.24);
   font-weight: 500;
+  font-size: 1.5rem;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
 }
 
 .project_card button {
@@ -290,7 +297,7 @@ header {
   font-weight: 500;
   font-size: 1.7rem;
   border: none;
-  margin-top: 26px;
+  margin-top: 31px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
