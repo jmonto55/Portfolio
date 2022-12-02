@@ -375,7 +375,7 @@ main {
 
 .project_card button:active {
   background: #ff33008f;
-  border:none;
+  border: none;
 }
 
 .multi_post_card button:hover {
@@ -386,7 +386,7 @@ main {
 
 .multi_post_card button:active {
   background: #b42107c4;
-  border:none;
+  border: none;
 }
 
 .about_me_section button:hover {
@@ -397,9 +397,8 @@ main {
 
 .about_me_section button:active {
   background: #ff33008f;
-  border:none;
+  border: none;
 }
-
 
 .skills_section {
   width: 375px;
