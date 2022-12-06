@@ -16,6 +16,7 @@ html {
 body {
   max-width: 375px;
   margin-left: calc(50% - 187.5px);
+  background-color: #e5e5e5;
 }
 
 header {
@@ -234,6 +235,22 @@ main {
   font-family: 'Inter', sans-serif;
 }
 
+footer button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+  padding: 12px;
+  width: 130px;
+  height: 48px;
+  background-color: #ff6b00;
+  justify-self: center;
+  margin-left: calc(50% - 65px);
+  border: none;
+  color: #fff;
+  margin-bottom: 124px;
+  cursor: pointer;
+}
+
 .multi_post_card button {
   align-self: flex-start;
   padding: 12px;
@@ -367,6 +384,17 @@ main {
   margin-top: 24px;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+footer button:hover {
+  background: #ff6a00bd;
+  border: solid #ff6b00;
+  border-width: 2px;
+}
+
+footer button:active {
+  background: #cf2900b7;
+  border: none;
 }
 
 .project_card button:hover {
@@ -524,39 +552,11 @@ footer textarea {
   font-size: 1.5rem;
 }
 
-footer button {
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 1.7rem;
-  padding: 12px;
-  width: 130px;
-  height: 48px;
-  background-color: #FF6B00;
-  justify-self: center;
-  margin-left: calc(50% - 65px);
-  border: none;
-  color: #fff;
-  margin-bottom: 124px;
-  cursor: pointer;
-}
-
-footer button:hover {
-  background: #ff6a00bd;
-  border: solid #ff6b00;
-  border-width: 2px;
-}
-
-footer button:active {
-  background: #cf2900b7;
-  border: none;
-}
-
 .social_media_footer {
   width: 375px;
   border-top: solid #dfe1e6 1px;
   display: flex;
   justify-content: space-between;
-  width: 375px;
   height: 40px;
   list-style: none;
   padding: 20px 90px;
@@ -602,11 +602,3 @@ footer button:active {
   width: 50px;
   height: 50px;
 }
-
-
-
-
-
-
-
-
