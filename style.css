@@ -25,7 +25,6 @@ header {
   background: #3c3a39;
   display: flex;
   align-items: center;
-  /* position: fixed; */
 }
 
 main {
@@ -201,6 +200,21 @@ main {
 
 .multi_post_image {
   margin-top: 65px;
+}
+
+footer h4 {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  width: 327px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 44px;
+  padding: 5px;
+  margin: 0 24px;
+  margin-top: 120px;
+  margin-bottom: 70px;
+  color: #172b4d;
 }
 
 .multi_post_card h4 {
@@ -493,10 +507,6 @@ footer button:active {
   background-repeat: no-repeat;
 }
 
-li {
-  list-style: none;
-}
-
 footer {
   width: 375px;
   background-color: #fff;
@@ -505,31 +515,16 @@ footer {
   align-items: center;
 }
 
-footer h4 {
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  width: 327px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 3.2rem;
-  line-height: 44px;
-  padding: 5px;
-  margin: 0 24px;
-  margin-top: 120px;
-  margin-bottom: 70px;
-  color: #172b4d;
-}
-
 .form_container { 
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
   width: 327px;
 }
 
 input {
-  margin: 0px 24px;
+  margin-left: 24px;
+  margin-right: 24px;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -546,7 +541,7 @@ footer textarea {
   width: 327px;
   margin: 24px;
   padding: 12px;
-  background-color: #fBf8f7;
+  background-color: #fbf8f7;
   border: none;
   font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
