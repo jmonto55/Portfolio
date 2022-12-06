@@ -490,3 +490,49 @@ footer h4 {
   margin-bottom: 70px;
   color: #172b4d;
 }
+
+.form_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  width: 327px;
+}
+
+input{
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  padding: 14px;
+  padding-left: 0;
+  border: none;
+  border-bottom: solid #dbdbd7 1px;
+
+}
+
+footer ul li{
+  margin: 24px;
+  
+}
+
+footer textarea{
+  height: 114px;
+  width: 327px;
+  padding: 12px;
+}
+
+footer button{
+  padding: 12px;
+  width: 130px;
+  height: 48px;
+  background: #FF6B00;
+  justify-self: center;
+  margin-left: calc(50% - 65px);
+}
+
+form .button{
+  align-self: center;
+}
+
