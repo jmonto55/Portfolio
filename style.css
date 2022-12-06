@@ -491,7 +491,7 @@ footer h4 {
   color: #172b4d;
 }
 
-.form_container{
+.form_container { 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -499,40 +499,87 @@ footer h4 {
   width: 327px;
 }
 
-input{
+input {
+  margin: 0px 24px;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
   padding: 14px;
-  padding-left: 0;
   border: none;
   border-bottom: solid #dbdbd7 1px;
-
+  width: 327px;
 }
 
-footer ul li{
-  margin: 24px;
-  
-}
-
-footer textarea{
+footer textarea {
   height: 114px;
   width: 327px;
+  margin: 24px;
   padding: 12px;
+  background-color: #fBf8f7;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
 }
 
-footer button{
+footer button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.7rem;
   padding: 12px;
   width: 130px;
   height: 48px;
-  background: #FF6B00;
+  background-color: #FF6B00;
   justify-self: center;
   margin-left: calc(50% - 65px);
+  border: none;
+  color: #fff;
+  margin-bottom: 124px;
 }
 
-form .button{
-  align-self: center;
+.social_media_footer {
+  width: 375px;
+  border-top: solid #dfe1e6 1px;
+  display: flex;
+  justify-content: center;
+  padding: 24px 0px;
 }
+
+.fo-github {
+  background-image: url("./assets/github_icon_f.svg");
+}
+
+.fo-linkedin {
+  background-image: url("./assets/linkedin_icon_f.svg");
+}
+
+.fo-angelist {
+  background-image: url("./assets/angelist_icon_f.svg");
+}
+
+.fo-twitter {
+  background-image: url("./assets/twitter_icon_f.svg");
+}
+
+.fo-medium {
+  background-image: url("./assets/medium_icon_f.svg");
+}
+
+.social_media_footer i {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+
+
+
+
 
