@@ -522,6 +522,10 @@ footer {
   width: 327px;
 }
 
+.form_container ul {
+  list-style: none;
+}
+
 input {
   margin-left: 24px;
   margin-right: 24px;
