@@ -15,6 +15,8 @@ html {
 
 body {
   max-width: 375px;
+  margin-left: calc(50% - 187.5px);
+  background-color: #e5e5e5;
 }
 
 header {
@@ -130,7 +132,7 @@ main {
 }
 
 .fa:hover {
-  background-color: rgba(255, 255, 255, 0.329);
+  background-color: rgba(255, 255, 255, 0.151);
 }
 
 .fa:active {
@@ -200,6 +202,21 @@ main {
   margin-top: 65px;
 }
 
+footer h4 {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  width: 327px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 44px;
+  padding: 5px;
+  margin: 0 24px;
+  margin-top: 120px;
+  margin-bottom: 70px;
+  color: #172b4d;
+}
+
 .multi_post_card h4 {
   font-family: 'Crete Round', serif;
   font-style: normal;
@@ -230,6 +247,22 @@ main {
   font-weight: 500;
   font-size: 1.5rem;
   font-family: 'Inter', sans-serif;
+}
+
+footer button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+  padding: 12px;
+  width: 130px;
+  height: 48px;
+  background-color: #ff6b00;
+  justify-self: center;
+  margin-left: calc(50% - 65px);
+  border: none;
+  color: #fff;
+  margin-bottom: 124px;
+  cursor: pointer;
 }
 
 .multi_post_card button {
@@ -367,6 +400,17 @@ main {
   transition: all 0.3s ease;
 }
 
+footer button:hover {
+  background: #ff6a00bd;
+  border: solid #ff6b00;
+  border-width: 2px;
+}
+
+footer button:active {
+  background: #cf2900b7;
+  border: none;
+}
+
 .project_card button:hover {
   background: #ff6a00bd;
   border: solid #ff6b00;
@@ -461,4 +505,99 @@ main {
   background-image: url(./assets/circle_icon.svg);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+footer {
+  width: 375px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 327px;
+}
+
+.form_container ul {
+  list-style: none;
+}
+
+input {
+  margin-left: 24px;
+  margin-right: 24px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  padding: 14px;
+  border: none;
+  border-bottom: solid #dbdbd7 1px;
+  width: 327px;
+}
+
+footer textarea {
+  height: 114px;
+  width: 327px;
+  margin: 24px;
+  padding: 12px;
+  background-color: #fbf8f7;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+}
+
+.social_media_footer {
+  width: 375px;
+  border-top: solid #dfe1e6 1px;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  list-style: none;
+  padding: 20px 90px;
+  margin-bottom: 40px;
+}
+
+.fo-github {
+  background-image: url("./assets/github_icon_f.svg");
+}
+
+.fo-linkedin {
+  background-image: url("./assets/linkedin_icon_f.svg");
+}
+
+.fo-angelist {
+  background-image: url("./assets/angelist_icon_f.svg");
+}
+
+.fo-twitter {
+  background-image: url("./assets/twitter_icon_f.svg");
+}
+
+.fo-medium {
+  background-image: url("./assets/medium_icon_f.svg");
+}
+
+.social_media_footer i {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.social_media_footer i:hover {
+  background-color: rgba(15, 14, 14, 0.151);
+}
+
+.social_media_footer i:active {
+  width: 50px;
+  height: 50px;
 }
