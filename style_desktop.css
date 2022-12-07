@@ -12,14 +12,9 @@
 html {
   font-size: 62.5%;
 }
-
-body {
-  width: 100vw;
-  overflow-x: hidden;
-}
   
 header {
-  width: 100vw;
+  width: 100%;
   height: 68px;
   background: #3c3a39;
   display: flex;
@@ -30,7 +25,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 44px;
   padding: 1px 24px;
 }
@@ -56,13 +51,13 @@ header {
   display: flex;
   flex-direction: row-reverse;
   justify-content: left;
-  /* align-items: center; */
   width: 100%;
   height: 798px;
   background: #1c1a19;
   background-image: url(./assets/background_image_desktop.svg);
   background-repeat: no-repeat;
   background-position: right;
+  margin-bottom: 50px;
 }
 
 .headline_text {
@@ -143,7 +138,7 @@ header {
   height: 40px;
   list-style: none;
   position: absolute;
-  top: 380px;
+  top: 350px;
 }
 
 .fa {
@@ -184,4 +179,210 @@ header {
 
 .fa-medium {
   background-image: url("./assets/medium_icon.svg");
+}
+
+.main_middle_section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  padding: 24px;
+  padding: 40px;
+}
+
+.main_middle_text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.main_middle_section h3 {
+  margin-right: 40px;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #1c1a19;
+}
+
+.title_line {
+  width: 60%;
+  height: 2px;
+  background-color: #21212165;
+}
+
+.main_articles_container {
+  width: 100%;
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(auto-fill, 327px);
+  grid-auto-rows: 500px;
+  column-gap: 12px;
+  grid-template-areas: "header header header";
+  padding-bottom: 120px;
+  overflow-x: hidden;
+}
+
+.multi_post_card {
+  display: flex;
+  grid-area: header;
+  align-items: center;
+}
+
+.multi_post_image {
+  display: none;
+}
+
+.multi_post_image_desktop {
+  margin-right: 20px;
+}
+
+.multi_post_text {
+  width: 300px;
+  margin-left: 30px;
+}
+
+footer h4 {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  width: 327px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 44px;
+  padding: 5px;
+  margin: 0 24px;
+  margin-top: 120px;
+  margin-bottom: 70px;
+  color: #172b4d;
+}
+
+.multi_post_card h4 {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  margin-top: 24px;
+}
+
+.multi_post_card p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 12px;
+}
+
+.techs_used {
+  display: flex;
+}
+
+.techs_used li {
+  list-style: none;
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+  margin-right: 15px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-family: 'Inter', sans-serif;
+}
+
+footer button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+  padding: 12px;
+  width: 130px;
+  height: 48px;
+  background-color: #ff6b00;
+  justify-self: center;
+  margin-left: calc(50% - 65px);
+  border: none;
+  color: #fff;
+  margin-bottom: 124px;
+  cursor: pointer;
+}
+
+.multi_post_card button {
+  align-self: flex-start;
+  padding: 12px;
+  width: 124px;
+  height: 48px;
+  background: #ff6b00;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.7rem;
+  border: none;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.project_card {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 386px;
+  width: 300px;
+  background-image: url(./assets/project_image.svg);
+  padding-top: 80px;
+}
+
+.project_card h4 {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  margin-left: 24px;
+}
+
+.project_card p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin-left: 24px;
+}
+
+.techs_used_project {
+  display: flex;
+}
+
+.techs_used_project li {
+  list-style: none;
+  margin-top: 4px;
+  margin-left: 24px;
+  padding: 10px 12px;
+  background-color: rgba(255, 255, 255, 0.24);
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+}
+
+.project_card button {
+  padding: 12px;
+  width: 300px;
+  height: 48px;
+  background: #ff6b00;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.7rem;
+  border: none;
+  margin-top: 31px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
