@@ -326,7 +326,7 @@ footer button {
   border: none;
   margin-top: 12px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 1s ease-out;
 }
 
 .project_card {
@@ -389,7 +389,6 @@ footer button {
   border: none;
   margin-top: 31px;
   cursor: pointer;
-  transition: all 0.3s ease;
 }
 
 .about_me_section {

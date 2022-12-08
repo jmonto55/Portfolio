@@ -134,7 +134,7 @@ main {
   background-repeat: no-repeat;
   border-radius: 50%;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.9s ease;
 }
 
 .fa:hover {
@@ -279,6 +279,7 @@ footer button {
   border: none;
   color: #fff;
   cursor: pointer;
+  transition: all 0.5s ease-out;
 }
 
 .multi_post_card button {
