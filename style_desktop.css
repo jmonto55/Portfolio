@@ -389,6 +389,7 @@ footer button {
   border: none;
   margin-top: 31px;
   cursor: pointer;
+  transition: all 0.6s ease-out;
 }
 
 .about_me_section {
