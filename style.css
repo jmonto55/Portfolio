@@ -276,7 +276,6 @@ footer button {
   margin-left: calc(50% - 65px);
   border: none;
   color: #fff;
-  /* margin-bottom: 124px; */
   cursor: pointer;
 }
 
@@ -628,4 +627,3 @@ footer textarea {
   width: 50px;
   height: 50px;
 }
-
