@@ -14,13 +14,13 @@ html {
 }
 
 body {
-  max-width: 375px;
-  margin-left: calc(50% - 187.5px);
+  max-width: 100%;
+  /* margin-left: calc(50% - 187.5px); */
   background-color: #e5e5e5;
 }
 
 header {
-  width: 375px;
+  width: 100%;
   height: 68px;
   background: #3c3a39;
   display: flex;
@@ -35,7 +35,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 375px;
+  width: 100%;
   height: 44px;
   padding: 1px 24px;
 }
@@ -67,7 +67,7 @@ main {
   flex-direction: column;
   align-items: flex-start;
   padding: 120px 24px;
-  width: 375px;
+  width: 100%;
   height: 590px;
   background: #1c1a19;
   background-image: url(./assets/background_image.svg);
@@ -165,7 +165,7 @@ main {
 }
 
 .main_middle_section {
-  width: 375px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -190,16 +190,21 @@ main {
 }
 
 .main_articles_container {
+  width: 100%;
   display: grid;
-  gap: 24px;
   place-content: center;
-  padding-bottom: 120px;
+  grid-auto-rows: 500px;
+  column-gap: 12px;
+  grid-template-areas: "header";
+  margin-bottom: 120px;
 }
 
 .multi_post_card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  grid-area: header;
+  place-self: center;
 }
 
 .multi_post_image {
@@ -269,7 +274,7 @@ footer button {
   margin-left: calc(50% - 65px);
   border: none;
   color: #fff;
-  margin-bottom: 124px;
+  /* margin-bottom: 124px; */
   cursor: pointer;
 }
 
@@ -298,6 +303,7 @@ footer button {
   width: 327px;
   background-image: url(./assets/project_image.svg);
   padding-top: 80px;
+  place-self: center;
 }
 
 .project_card h4 {
@@ -353,7 +359,7 @@ footer button {
 }
 
 .about_me_section {
-  width: 375px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: #1c1a19;
@@ -365,10 +371,11 @@ footer button {
 }
 
 .title_line_two {
-  width: 327px;
+  width: 80%;
   height: 1px;
   background-color: #fff;
   margin-top: 200px;
+  margin-left: 40px;
 }
 
 .about_me_section h4 {
@@ -453,10 +460,10 @@ footer button:active {
 }
 
 .skills_section {
-  width: 375px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: #1c1a19;
   color: #fff;
   padding-top: 80px;
@@ -464,6 +471,7 @@ footer button:active {
 }
 
 .skills_section ul {
+  width: 270px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -484,7 +492,7 @@ footer button:active {
 
 .diamond_icon {
   position: absolute;
-  left: -40px;
+  left: -10px;
   top: 5px;
   width: 28px;
   height: 28px;
@@ -495,7 +503,7 @@ footer button:active {
 
 .square_icon {
   position: absolute;
-  left: -40px;
+  left: -10px;
   top: 5px;
   width: 28px;
   height: 28px;
@@ -506,7 +514,7 @@ footer button:active {
 
 .circle_icon {
   position: absolute;
-  left: -40px;
+  left: 20px;
   top: 5px;
   width: 28px;
   height: 28px;
@@ -516,18 +524,24 @@ footer button:active {
 }
 
 footer {
-  width: 375px;
+  width: 100%;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.footer_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
 .form_container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 327px;
 }
 
 .form_container ul {
@@ -545,12 +559,14 @@ input {
   padding: 14px;
   border: none;
   border-bottom: solid #dbdbd7 1px;
-  width: 327px;
+  min-width: 325px;
+  width: 50vw;
 }
 
 footer textarea {
   height: 114px;
-  width: 327px;
+  width: 50vw;
+  min-width: 325px;
   margin: 24px;
   padding: 12px;
   background-color: #fbf8f7;
@@ -560,14 +576,15 @@ footer textarea {
 }
 
 .social_media_footer {
-  width: 375px;
+  width: 100%;
   border-top: solid #dfe1e6 1px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   height: 40px;
   list-style: none;
   padding: 20px 90px;
   margin-bottom: 40px;
+  margin-top: 124px;
 }
 
 .fo-github {
