@@ -77,6 +77,19 @@ header {
   line-height: 64px;
   letter-spacing: 0.37px;
   color: #ff6b00;
+  animation: 2s 1 alternate slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .tool_bar h1:hover {
@@ -118,6 +131,7 @@ header {
   font-size: 2.4rem;
   line-height: 32px;
   color: #fff5e1;
+  animation: 2s 1 alternate slidein;
 }
 
 .headline p {
@@ -130,6 +144,7 @@ header {
   font-size: 1.6rem;
   line-height: 24px;
   color: #fff;
+  animation: 2s 1 alternate slidein;
 }
 
 .social_media {
@@ -162,6 +177,7 @@ header {
 .fa:active {
   width: 50px;
   height: 50px;
+  transform: rotate(-10deg);
 }
 
 .fa-github {
@@ -210,6 +226,7 @@ header {
   line-height: 52px;
   color: #1c1a19;
   margin-right: 25px;
+  animation: 2s 1 alternate slidein;
 }
 
 .title_line {
@@ -225,7 +242,7 @@ header {
   place-content: center;
   grid-template-columns: repeat(3, 327px);
   grid-auto-rows: 500px;
-  column-gap: 12px;
+  gap: 12px;
   grid-template-areas: "header header header";
   padding-bottom: 40px;
 }
@@ -326,7 +343,7 @@ footer button {
   border: none;
   margin-top: 12px;
   cursor: pointer;
-  transition: all 1s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .project_card {
@@ -334,6 +351,7 @@ footer button {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-left: calc(50% - 150px);
   height: 386px;
   width: 300px;
   background-image: url(./assets/project_image.svg);
@@ -379,7 +397,7 @@ footer button {
 .project_card button {
   padding: 12px;
   width: 300px;
-  height: 48px;
+  height: 49px;
   background: #ff6b00;
   color: #fff;
   font-family: 'Inter', sans-serif;
@@ -459,6 +477,7 @@ footer button:hover {
 footer button:active {
   background: #cf2900b7;
   border: none;
+  transform: rotate(-10deg);
 }
 
 .project_card button:hover {
@@ -470,6 +489,7 @@ footer button:active {
 .project_card button:active {
   background: #ff33008f;
   border: none;
+  transform: scale(1.15);
 }
 
 .multi_post_card button:hover {
@@ -481,6 +501,7 @@ footer button:active {
 .multi_post_card button:active {
   background: #b42107c4;
   border: none;
+  transform: rotate(-10deg);
 }
 
 .about_me_section button:hover {
@@ -492,6 +513,7 @@ footer button:active {
 .about_me_section button:active {
   background: #ff33008f;
   border: none;
+  transform: rotate(-10deg);
 }
 
 .skills_section {
@@ -665,4 +687,5 @@ footer textarea {
 .social_media_footer i:active {
   width: 50px;
   height: 50px;
+  transform: rotate(-10deg);
 }

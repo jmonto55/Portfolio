@@ -223,7 +223,6 @@ header {
   display: grid;
   place-content: center;
   grid-template-columns: repeat(2, 327px);
-  grid-auto-rows: 500px;
   column-gap: 12px;
   grid-template-areas: "header header";
   padding-bottom: 40px;
@@ -330,6 +329,7 @@ footer button {
 
 .project_card {
   margin-top: 40px;
+  margin-left: calc(50% - 150px);
   display: flex;
   flex-direction: column;
   align-items: flex-start;

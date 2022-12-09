@@ -619,7 +619,7 @@ footer textarea {
   background-repeat: no-repeat;
   border-radius: 50%;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in;
 }
 
 .social_media_footer i:hover {
