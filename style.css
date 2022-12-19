@@ -39,7 +39,6 @@ main {
   width: 100%;
   height: 44px;
   padding: 1px 24px;
-  margin-left: 10px;
 }
 
 .tool_bar a {
@@ -47,14 +46,22 @@ main {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 32px;
-  color: #ffff;
+  color: #fff5e1;
   cursor: pointer;
   padding-left: 12px;
 }
 
 .tool_bar img {
-  margin-right: 24px;
   cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.tool_bar .logo {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
 }
 
 .tool_bar img:hover {
@@ -653,6 +660,6 @@ footer textarea {
 
 .close-button {
   position: absolute;
-  right: 10px;
+  right: 40px;
   padding-top: 30px;
 }
