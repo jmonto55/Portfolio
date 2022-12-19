@@ -8,6 +8,8 @@ function openMenu() {
   hamburgerButton.classList.toggle('invisible');
   myName.classList.toggle('invisible');
   closeButton.classList.toggle('invisible');
+  navItems.classList.toggle('invisible');
+  navItems.classList.add('open_menu');
 }
 
 hamburgerButton.addEventListener('click', openMenu);
