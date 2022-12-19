@@ -9,7 +9,17 @@ function openMenu() {
   myName.classList.toggle('invisible');
   closeButton.classList.toggle('invisible');
   navItems.classList.toggle('invisible');
-  navItems.classList.add('open_menu');
+  navItems.classList.toggle('open_menu');
+}
+
+function closeMenu() {
+  hamburgerButton.classList.toggle('invisible');
+  myName.classList.toggle('invisible');
+  closeButton.classList.toggle('invisible');
+  navItems.classList.toggle('invisible');
+  navItems.classList.toggle('open_menu');
 }
 
 hamburgerButton.addEventListener('click', openMenu);
+closeButton.addEventListener('click', closeMenu);
+navItems.addEventListener('click', closeMenu);

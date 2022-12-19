@@ -45,10 +45,11 @@ main {
 .tool_bar a {
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 2rem;
+  font-weight: 700;
+  font-size: 32px;
   color: #ffff;
   cursor: pointer;
+  padding-left: 12px;
 }
 
 .tool_bar img {
@@ -640,12 +641,8 @@ footer textarea {
   padding: 50px 24px 24px 24px;
   min-width: 375px;
   height: 100vh;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  color: #fff5e1;
   list-style: none;
+  margin-top: 18px;
 }
 
 .nav-item {
@@ -656,5 +653,6 @@ footer textarea {
 
 .close-button {
   position: absolute;
-  right: 0;
+  right: 10px;
+  padding-top: 30px;
 }
