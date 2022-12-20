@@ -45,19 +45,107 @@ const projectData = [
       linkToSourceCode: '',
     },
   },
+
+  {
+    name: 'Professional data',
+    description:
+      "A daily selection of privately personalized reads; no account's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    featuredImage: [],
+    technologies: ['html', 'Bootstrap', 'Ruby'],
+    links: {
+      linkToLiveServer: '',
+      linkToSourceCode: '',
+    },
+  },
+
+  {
+    name: 'Data Dashboard Healthcare',
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    featuredImage: [],
+    technologies: ['html', 'Bootstrap', 'Ruby'],
+    links: {
+      linkToLiveServer: '',
+      linkToSourceCode: '',
+    },
+  },
+
+  {
+    name: 'Profesional Art Printing Data More',
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    featuredImage: [],
+    technologies: ['html', 'Bootstrap', 'Ruby'],
+    links: {
+      linkToLiveServer: '',
+      linkToSourceCode: '',
+    },
+  },
+
+  {
+    name: 'Data Dashboard Healthcare',
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    featuredImage: [],
+    technologies: ['html', 'Bootstrap', 'Ruby'],
+    links: {
+      linkToLiveServer: '',
+      linkToSourceCode: '',
+    },
+  },
+
+  {
+    name: 'Data Visualization',
+    description:
+      "A daily selection of privately personalized reads; no account's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    featuredImage: [],
+    technologies: ['html', 'Bootstrap', 'Ruby'],
+    links: {
+      linkToLiveServer: '',
+      linkToSourceCode: '',
+    },
+  },
 ];
+
 
 const mainContainer = document.createElement('div');
 mainContainer.className = 'main_articles_container';
 
+
 for (let i = 0; i < projectData.length; i += 1) {
   const multiPostCard = document.createElement('article');
-  const featuredImage = document.createElement('img');
-  [featuredImage.src] = projectData[i].featuredImage;
-  featuredImage.className = 'multi_post_image';
+  if (i == 0) {
+    const featuredImage = document.createElement('img');
+    const multiPostText = document.createElement('div');
+    const name = document.createElement('h4');
+    name.innerText = projectData[i]['name'];
+    const description = document.createElement('p');
+    description.innerText = projectData[i]['description'];
 
-  multiPostCard.append(featuredImage);
-  mainContainer.append(multiPostCard);
+    const technologies = document.createElement('ul');
+    technologies.className = 'techs_used';
+    let listOfTechnologies = projectData[i]['technologies'];
+    for (let j = 0; j < listOfTechnologies.length; j +=1) {
+      let technology = document.createElement('li');
+      technology.innerText = listOfTechnologies[j];
+      technologies.append(technology);
+    }
+    const button = document.createElement('button');
+    button.innerText = 'See Project';
+
+    multiPostText.className = 'multi_post_text';
+    [featuredImage.src] = projectData[i].featuredImage;
+    featuredImage.className = 'multi_post_image';
+    multiPostText.append(name, description, technologies, button);
+
+    multiPostCard.append(featuredImage, multiPostText);
+    mainContainer.append(multiPostCard);
+    continue;
+  }
+
+  const projectCard = document.createElement('article');
+
 }
+
 
 worksSection.append(mainMiddleText, mainContainer);
