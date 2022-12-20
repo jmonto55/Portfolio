@@ -107,10 +107,8 @@ const projectData = [
   },
 ];
 
-
 const mainContainer = document.createElement('div');
 mainContainer.className = 'main_articles_container';
-
 
 for (let i = 0; i < projectData.length; i += 1) {
   const multiPostCard = document.createElement('article');
@@ -118,15 +116,15 @@ for (let i = 0; i < projectData.length; i += 1) {
     const featuredImage = document.createElement('img');
     const multiPostText = document.createElement('div');
     const name = document.createElement('h4');
-    name.innerText = projectData[i]['name'];
+    name.innerText = projectData[i].name;
     const description = document.createElement('p');
-    description.innerText = projectData[i]['description'];
+    description.innerText = projectData[i].description;
 
     const technologies = document.createElement('ul');
     technologies.className = 'techs_used';
-    let listOfTechnologies = projectData[i]['technologies'];
-    for (let j = 0; j < listOfTechnologies.length; j +=1) {
-      let technology = document.createElement('li');
+    const listOfTechnologies = projectData[i].technologies;
+    for (let j = 0; j < listOfTechnologies.length; j += 1) {
+      const technology = document.createElement('li');
       technology.innerText = listOfTechnologies[j];
       technologies.append(technology);
     }
@@ -144,8 +142,24 @@ for (let i = 0; i < projectData.length; i += 1) {
   }
 
   const projectCard = document.createElement('article');
+  projectCard.className = 'project_card';
+  const name = document.createElement('h4');
+  name.innerText = projectData[i].name;
+  const description = document.createElement('p');
+  description.innerText = projectData[i].description;
 
+  const technologies = document.createElement('ul');
+  technologies.className = 'techs_used_project';
+  const listOfTechnologies = projectData[i].technologies;
+  for (let j = 0; j < listOfTechnologies.length; j += 1) {
+    const technology = document.createElement('li');
+    technology.innerText = listOfTechnologies[j];
+    technologies.append(technology);
+  }
+  const button = document.createElement('button');
+  button.innerText = 'See Project';
+  projectCard.append(name, description, technologies, button);
+  mainContainer.append(projectCard);
 }
-
 
 worksSection.append(mainMiddleText, mainContainer);
