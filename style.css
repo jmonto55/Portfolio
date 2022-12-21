@@ -808,3 +808,11 @@ footer textarea {
   padding-top: 55px;
   background-color: #1c1a19;
 }
+
+.error_message {
+  color: red;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}

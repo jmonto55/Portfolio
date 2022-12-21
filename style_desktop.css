@@ -673,7 +673,7 @@ footer textarea {
   max-width: 1156px;
   background-color: rgb(255, 255, 255);
   border: solid 1px #dfe1e6;
-  padding-top: 20px;
+  padding: 24px 24px 27px 24px;
   place-self: center;
   position: relative;
   z-index: 99;
@@ -690,7 +690,6 @@ footer textarea {
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
-  margin: 16px;
 }
 
 .close_icon {
@@ -712,11 +711,9 @@ footer textarea {
   font-size: 16px;
   line-height: 22px;
   color: #344563;
-  margin: 20px;
-  width: 30%;
-  max-width: 424px;
+  width: 424px;
   position: absolute;
-  right: 5px;
+  right: 10px;
   bottom: 235px;
 }
 
@@ -724,27 +721,25 @@ footer textarea {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  margin-top: 18px;
-  margin-bottom: 8px;
+  margin-top: 12px;
 }
 
 .tech_stack li {
   list-style: none;
   margin-top: 4px;
-  margin-left: 20px;
+  margin-right: 20px;
   padding: 6px 12px;
   border: solid 1px black;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 15px;
   font-family: 'Poppins', sans-serif;
   color: #3c3a39;
 }
 
 .popup_img {
-  width: auto;
-  max-width: 659px;
-  height: 430px;
-  margin: 16px;
+  height: 448px;
+  margin-top: 40px;
+  align-self: flex-start;
 }
 
 .popup_card .btn {
@@ -758,14 +753,14 @@ footer textarea {
   font-size: 1.7rem;
   border: none;
   position: absolute;
-  bottom: 15px;
+  bottom: 26px;
   cursor: pointer;
   transition: all 0.6s ease-out;
   text-align: left;
 }
 
 .live_btn {
-  right: 235px;
+  right: 299px;
   position: relative;
   width: 134px;
 }
@@ -782,7 +777,7 @@ footer textarea {
 }
 
 .source_btn {
-  right: 65px;
+  right: 133px;
   position: relative;
   width: 159px;
 }
@@ -815,4 +810,12 @@ footer textarea {
 
 .nav_list li:hover {
   color: rgba(255, 255, 255, 0.582);
+}
+
+.error_message {
+  color: red;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
