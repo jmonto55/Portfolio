@@ -26,6 +26,7 @@ header {
   display: flex;
   align-items: center;
   position: fixed;
+  z-index: 99;
 }
 
 main {
@@ -663,4 +664,12 @@ footer textarea {
   position: absolute;
   right: 40px;
   padding-top: 30px;
+}
+
+.error_message {
+  color: red;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
