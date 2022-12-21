@@ -811,11 +811,3 @@ footer textarea {
 .nav_list li:hover {
   color: rgba(255, 255, 255, 0.582);
 }
-
-.error_message {
-  color: red;
-  font-size: 12px;
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
