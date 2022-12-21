@@ -327,14 +327,15 @@ footer button {
 }
 
 .project_card {
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: space-evenly;
   height: 386px;
   width: 300px;
   background-image: url(./assets/project_image.svg);
-  padding-top: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   position: relative;
 }
 
@@ -653,10 +654,6 @@ footer textarea {
   border-radius: 50%;
 }
 
-.nav_list li:hover {
-  color: rgba(255, 255, 255, 0.582);
-}
-
 .social_media_footer i:hover {
   background-color: rgba(15, 14, 14, 0.151);
 }
@@ -670,6 +667,7 @@ footer textarea {
 .popup_card {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   height: 631px;
   width: 100%;
   max-width: 1156px;
@@ -742,14 +740,14 @@ footer textarea {
   color: #3c3a39;
 }
 
-.popup_card figure {
-  width: 80%;
+.popup_img {
+  width: auto;
   max-width: 659px;
-  height: 448px;
+  height: 430px;
   margin: 16px;
 }
 
-.popup_card button {
+.popup_card .btn {
   padding: 12px;
   height: 48px;
   background: #ff6b00;
@@ -772,7 +770,7 @@ footer textarea {
   width: 134px;
 }
 
-.live_btn i {
+.live_i {
   position: absolute;
   right: 15px;
   top: 15px;
@@ -789,7 +787,7 @@ footer textarea {
   width: 159px;
 }
 
-.source_btn i {
+.source_i {
   position: absolute;
   right: 15px;
   top: 15px;
@@ -804,3 +802,17 @@ footer textarea {
   overflow-y: hidden;
 }
 
+.blur {
+  filter: blur(4px);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  background-color: #1c1a19;
+}
+
+.nav_list li:hover {
+  color: rgba(255, 255, 255, 0.582);
+}

@@ -737,13 +737,13 @@ footer textarea {
   color: #3c3a39;
 }
 
-.popup_card figure {
+.popup_img {
   width: 311px;
   height: 220px;
   margin: 16px;
 }
 
-.popup_card button {
+.popup_card .btn {
   padding: 12px;
   height: 48px;
   background: #ff6b00;
@@ -766,7 +766,7 @@ footer textarea {
   width: 134px;
 }
 
-.live_btn i {
+.live_i {
   position: absolute;
   right: 15px;
   top: 15px;
@@ -783,7 +783,7 @@ footer textarea {
   width: 159px;
 }
 
-.source_btn i {
+.source_i {
   position: absolute;
   right: 15px;
   top: 15px;
@@ -796,4 +796,15 @@ footer textarea {
 
 .active {
   overflow-y: hidden;
+}
+
+.blur {
+  filter: blur(4px);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  padding-top: 55px;
+  background-color: #1c1a19;
 }
