@@ -10,7 +10,7 @@ const projectData = [
     name: 'Multi-Post Stories',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    featuredImage: ['./assets/multi_post_image_desktop.svg',],
+    featuredImage: ['./assets/multi_post_image_desktop.svg'],
     technologies: ['css', 'html', 'Bootstrap', 'Ruby'],
     links: {
       linkToLiveServer: '',
