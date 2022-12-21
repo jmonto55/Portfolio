@@ -2,6 +2,7 @@ const hamburgerButton = document.querySelector('.hamburger');
 const closeButton = document.querySelector('.close-button');
 const navItems = document.querySelector('.nav_list');
 const myName = document.querySelector('.logo');
+const body = document.getElementById('body');
 
 function openMenu() {
   hamburgerButton.classList.toggle('invisible');
@@ -22,11 +23,13 @@ function closeMenu() {
 function seeProject () {
   popupWindow.classList.toggle('invisible');
   location.href = '#portfolio';
+  body.classList.toggle('active');
 }
 
 function closeProject () {
   popupWindow.classList.toggle('invisible');
-  location.href = '#portfolio';
+  location.href = '#portfolio_down';
+  body.classList.toggle('active');
 }
 
 hamburgerButton.addEventListener('click', openMenu);
@@ -51,7 +54,7 @@ const projectData = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     featuredImage: [
-      './assets/multi_post_image.svg',
+      './assets/multi_post_image_desktop.svg',
       './assets/multi_post_image_desktop.svg',
     ],
     technologies: ['css', 'html', 'Bootstrap', 'Ruby'],

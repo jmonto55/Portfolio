@@ -238,11 +238,7 @@ header {
 }
 
 .multi_post_image {
-  display: none;
-}
-
-.multi_post_image_desktop {
-  margin-right: 20px;
+  max-width: 684px;
 }
 
 .multi_post_text {
@@ -803,3 +799,8 @@ footer textarea {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.active {
+  overflow-y: hidden;
+}
+

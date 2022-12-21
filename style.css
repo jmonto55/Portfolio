@@ -219,6 +219,8 @@ main {
 
 .multi_post_image {
   margin-top: 65px;
+  width: 100%;
+  max-width: 327px;
 }
 
 .multi_post_image_desktop {
@@ -790,4 +792,8 @@ footer textarea {
   background-image: url(./assets/source_icon.svg);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.active {
+  overflow-y: hidden;
 }
