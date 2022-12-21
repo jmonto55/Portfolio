@@ -19,16 +19,31 @@ function closeMenu() {
   navItems.classList.toggle('open_menu');
 }
 
+function seeProject () {
+  popupWindow.classList.toggle('invisible');
+  location.href = '#portfolio';
+}
+
+function closeProject () {
+  popupWindow.classList.toggle('invisible');
+  location.href = '#portfolio';
+}
+
 hamburgerButton.addEventListener('click', openMenu);
 closeButton.addEventListener('click', closeMenu);
 navItems.addEventListener('click', closeMenu);
 
+const xProject = document.querySelector('.close_icon');
+xProject.addEventListener('click', closeProject);
+
 const worksSection = document.getElementById('portfolio');
 const mainMiddleText = document.createElement('div');
-mainMiddleText.innerHTML = '<h3>My Recent Works</h3>';
+mainMiddleText.className = 'main_middle_text';
+const myRecentWorks = document.createElement('h3');
+myRecentWorks.innerText = 'My Recent Works';
 const titleLine = document.createElement('div');
 titleLine.className = 'title_line';
-mainMiddleText.appendChild(titleLine);
+mainMiddleText.append(myRecentWorks, titleLine);
 
 const projectData = [
   {
@@ -105,6 +120,18 @@ const projectData = [
       linkToSourceCode: '',
     },
   },
+
+  {
+    name: 'Video Game',
+    description:
+      "A daily selection of privately personalized reads; no account's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    featuredImage: [],
+    technologies: ['html', 'Bootstrap', 'Ruby'],
+    links: {
+      linkToLiveServer: '',
+      linkToSourceCode: '',
+    },
+  }
 ];
 
 const mainContainer = document.createElement('div');
@@ -112,6 +139,8 @@ mainContainer.className = 'main_articles_container';
 
 for (let i = 0; i < projectData.length; i += 1) {
   const multiPostCard = document.createElement('article');
+  multiPostCard.className = 'multi_post_card';
+
   if (i == 0) {
     const featuredImage = document.createElement('img');
     const multiPostText = document.createElement('div');
@@ -123,13 +152,16 @@ for (let i = 0; i < projectData.length; i += 1) {
     const technologies = document.createElement('ul');
     technologies.className = 'techs_used';
     const listOfTechnologies = projectData[i].technologies;
+    
     for (let j = 0; j < listOfTechnologies.length; j += 1) {
       const technology = document.createElement('li');
       technology.innerText = listOfTechnologies[j];
       technologies.append(technology);
     }
+
     const button = document.createElement('button');
     button.innerText = 'See Project';
+    button.addEventListener('click', seeProject);
 
     multiPostText.className = 'multi_post_text';
     [featuredImage.src] = projectData[i].featuredImage;
@@ -151,15 +183,22 @@ for (let i = 0; i < projectData.length; i += 1) {
   const technologies = document.createElement('ul');
   technologies.className = 'techs_used_project';
   const listOfTechnologies = projectData[i].technologies;
+
   for (let j = 0; j < listOfTechnologies.length; j += 1) {
     const technology = document.createElement('li');
     technology.innerText = listOfTechnologies[j];
     technologies.append(technology);
   }
+
   const button = document.createElement('button');
   button.innerText = 'See Project';
   projectCard.append(name, description, technologies, button);
   mainContainer.append(projectCard);
+  button.addEventListener('click', seeProject);
 }
 
 worksSection.append(mainMiddleText, mainContainer);
+
+popupWindow = document.querySelector('.popup_card');
+
+
