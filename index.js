@@ -22,3 +22,20 @@ function closeMenu() {
 hamburgerButton.addEventListener('click', openMenu);
 closeButton.addEventListener('click', closeMenu);
 navItems.addEventListener('click', closeMenu);
+
+// Form Validation
+
+function validateEmail(email, error, event) {
+  if (email !== email.toLowerCase()) {
+    event.preventDefault();
+    const msg = document.getElementById('error-message');
+    msg.innerText = error;
+  }
+}
+const form = document.getElementById('form');
+form.addEventListener('submit', (event) => {
+  const invalidEmail = 'Error, please enter an email without any upper-case letters.';
+  const email = form.elements.mail;
+  const emailText = email.value;
+  validateEmail(emailText, invalidEmail, event);
+});
