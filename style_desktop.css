@@ -809,7 +809,7 @@ footer textarea {
 .center {
   display: flex;
   justify-content: center;
-  padding-top: 80px;
+  padding-top: 100px;
   background-color: #1c1a19;
 }
 

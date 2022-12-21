@@ -10,10 +10,7 @@ const projectData = [
     name: 'Multi-Post Stories',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    featuredImage: [
-      './assets/multi_post_image_desktop.svg',
-      './assets/multi_post_image_desktop.svg',
-    ],
+    featuredImage: ['./assets/multi_post_image_desktop.svg',],
     technologies: ['css', 'html', 'Bootstrap', 'Ruby'],
     links: {
       linkToLiveServer: '',
@@ -115,6 +112,7 @@ function seeProject(k) {
   const techStack = document.querySelector('.tech_stack');
   const popupText = document.querySelector('.popup_text');
   const popupImage = document.querySelector('.popup_img');
+  const socialMedia = document.querySelector('.social_media');
 
   [popupImage.src] = projectData[k - 2].featuredImage;
   title.innerText = projectData[k - 2].name;
@@ -129,15 +127,18 @@ function seeProject(k) {
   window.location.href = '#popup';
   body.classList.toggle('active');
   header.classList.toggle('blur');
+  socialMedia.classList.toggle('blur');
 }
 
 function closeProject() {
   const techStack = document.querySelector('.tech_stack');
+  const socialMedia = document.querySelector('.social_media');
   popupWindow.classList.toggle('invisible');
   window.location.href = '#portfolio_down';
   body.classList.toggle('active');
   techStack.innerHTML = '';
   header.classList.toggle('blur');
+  socialMedia.classList.toggle('blur');
 }
 
 hamburgerButton.addEventListener('click', openMenu);
