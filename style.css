@@ -678,8 +678,9 @@ footer textarea {
   border: solid 1px #dfe1e6;
   padding-top: 20px;
   place-self: center;
-  position: relative;
+  position: fixed;
   z-index: 99;
+  top: calc(50% - 359px);
 }
 
 .invisible {
@@ -720,15 +721,17 @@ footer textarea {
 
 .tech_stack {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: left;
   width: 100%;
   margin-top: 18px;
   margin-bottom: 8px;
+  margin-left: 16px;
 }
 
 .tech_stack li {
   list-style: none;
   margin-top: 4px;
+  margin-right: 10px;
   padding: 6px 12px;
   border: solid 1px black;
   font-weight: 500;
@@ -794,10 +797,6 @@ footer textarea {
   background-repeat: no-repeat;
 }
 
-.active {
-  overflow-y: hidden;
-}
-
 .blur {
   filter: blur(4px);
 }
@@ -807,4 +806,5 @@ footer textarea {
   justify-content: center;
   padding-top: 55px;
   background-color: #1c1a19;
+  overflow: scroll;
 }

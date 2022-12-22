@@ -20,7 +20,7 @@ header {
   display: flex;
   align-items: center;
   position: fixed;
-  z-index: 98;
+  z-index: 101;
 }
 
 .tool_bar {
@@ -793,10 +793,6 @@ footer textarea {
   background-repeat: no-repeat;
 }
 
-.active {
-  overflow-y: hidden;
-}
-
 .blur {
   filter: blur(4px);
 }
@@ -805,7 +801,10 @@ footer textarea {
   display: flex;
   justify-content: center;
   padding-top: 100px;
-  background-color: #1c1a19;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  overflow: scroll;
 }
 
 .nav_list li:hover {

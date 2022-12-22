@@ -2,7 +2,6 @@ const hamburgerButton = document.querySelector('.hamburger');
 const closeButton = document.querySelector('.close-button');
 const navItems = document.querySelector('.nav_list');
 const myName = document.querySelector('.logo');
-const body = document.getElementById('body');
 const popupWindow = document.querySelector('.popup_card');
 const header = document.getElementById('header');
 const projectData = [
@@ -112,9 +111,9 @@ function seeProject(k) {
   const techStack = document.querySelector('.tech_stack');
   const popupText = document.querySelector('.popup_text');
   const popupImage = document.querySelector('.popup_img');
-  const socialMedia = document.querySelector('.social_media');
+  const main = document.querySelector('.main');
 
-  [popupImage.src] = projectData[k - 2].featuredImage;
+  popupImage.src = projectData[k - 2].featuredImage;
   title.innerText = projectData[k - 2].name;
   popupText.innerText = projectData[k - 2].description;
   for (let l = 0; l < projectData[k - 2].technologies.length; l += 1) {
@@ -124,21 +123,19 @@ function seeProject(k) {
     techStack.append(tech);
   }
   popupWindow.classList.toggle('invisible');
-  window.location.href = '#popup';
-  body.classList.toggle('active');
+  // body.classList.toggle('active');
   header.classList.toggle('blur');
-  socialMedia.classList.toggle('blur');
+  main.classList.toggle('blur');
 }
 
 function closeProject() {
   const techStack = document.querySelector('.tech_stack');
-  const socialMedia = document.querySelector('.social_media');
+  const main = document.querySelector('.main');
   popupWindow.classList.toggle('invisible');
-  window.location.href = '#portfolio_down';
-  body.classList.toggle('active');
+  // body.classList.toggle('active');
   techStack.innerHTML = '';
   header.classList.toggle('blur');
-  socialMedia.classList.toggle('blur');
+  main.classList.toggle('blur');
 }
 
 hamburgerButton.addEventListener('click', openMenu);
